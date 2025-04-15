@@ -38,16 +38,15 @@ android {
 
 dependencies {
     implementation(libs.androidx.multidex)
-    implementation(libs.material)
     implementation(libs.play.services.maps)
 
     implementation(libs.androidx.activity.compose.v1101)
-    implementation(libs.androidx.material)
     implementation(libs.androidx.animation)
     implementation(libs.androidx.ui.tooling.v178)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
 
     implementation(projects.shared)
+
     implementation(libs.compose.ui)
     implementation(libs.compose.ui.tooling.preview)
     implementation(libs.compose.material3)
