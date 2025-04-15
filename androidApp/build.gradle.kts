@@ -37,15 +37,16 @@ android {
 }
 
 dependencies {
-    implementation("androidx.multidex:multidex:2.0.1")
-    implementation("com.google.android.material:material:1.12.0")
-    implementation("com.google.android.gms:play-services-maps:19.0.0")
+    implementation(libs.androidx.multidex)
+    implementation(libs.material)
+    implementation(libs.play.services.maps)
 
-    implementation("androidx.activity:activity-compose:1.9.2")
-    implementation("androidx.compose.material:material:1.7.3")
-    implementation("androidx.compose.animation:animation:1.7.3")
-    implementation("androidx.compose.ui:ui-tooling:1.7.3")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.6")
+    implementation(libs.androidx.activity.compose.v1101)
+    implementation(libs.androidx.material)
+    implementation(libs.androidx.animation)
+    implementation(libs.androidx.ui.tooling.v178)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+
     implementation(projects.shared)
     implementation(libs.compose.ui)
     implementation(libs.compose.ui.tooling.preview)
