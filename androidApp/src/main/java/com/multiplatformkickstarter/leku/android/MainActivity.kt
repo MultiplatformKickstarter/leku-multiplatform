@@ -9,10 +9,10 @@ import android.os.Bundle
 import android.os.StrictMode
 import android.util.Log
 import android.widget.Toast
+import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -22,9 +22,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.material.Button
-import androidx.compose.material.ButtonDefaults
-import androidx.compose.material.Text
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -50,10 +50,7 @@ import com.multiplatformkickstarter.leku.TRANSITION_BUNDLE
 import com.multiplatformkickstarter.leku.ZIPCODE
 import com.multiplatformkickstarter.leku.tracker.LocationPickerTracker
 import com.multiplatformkickstarter.leku.tracker.TrackEvents
-import org.intellij.lang.annotations.JdkConstants.HorizontalAlignment
 import java.util.UUID
-import kotlin.collections.ArrayList
-import kotlin.collections.List
 
 private const val DEMO_LATITUDE = 41.4036299
 private const val DEMO_LONGITUDE = 2.1743558
@@ -62,7 +59,7 @@ private const val POI1_LONGITUDE = 2.1721618
 private const val POI2_LATITUDE = 41.4023265
 private const val POI2_LONGITUDE = 2.1741417
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : ComponentActivity() {
     val lekuActivityResultLauncher =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result: ActivityResult ->
             if (result.resultCode == Activity.RESULT_OK) {
@@ -254,7 +251,7 @@ fun MainView() {
         ) {
             Button(
                 colors = ButtonDefaults.buttonColors(
-                    backgroundColor = Color(context.resources.getColor(R.color.leku_app_blue)),
+                    containerColor = Color(context.resources.getColor(R.color.leku_app_blue)),
                     contentColor = Color.White
                 ),
                 onClick = {
@@ -271,7 +268,7 @@ fun MainView() {
             }
             Button(
                 colors = ButtonDefaults.buttonColors(
-                    backgroundColor = Color(context.resources.getColor(R.color.leku_app_blue)),
+                    containerColor = Color(context.resources.getColor(R.color.leku_app_blue)),
                     contentColor = Color.White
                 ),
                 onClick = {
@@ -288,7 +285,7 @@ fun MainView() {
             }
             Button(
                 colors = ButtonDefaults.buttonColors(
-                    backgroundColor = Color(context.resources.getColor(R.color.leku_app_blue)),
+                    containerColor = Color(context.resources.getColor(R.color.leku_app_blue)),
                     contentColor = Color.White
                 ),
                 onClick = {
@@ -305,7 +302,7 @@ fun MainView() {
             }
             Button(
                 colors = ButtonDefaults.buttonColors(
-                    backgroundColor = Color(context.resources.getColor(R.color.leku_app_blue)),
+                    containerColor = Color(context.resources.getColor(R.color.leku_app_blue)),
                     contentColor = Color.White
                 ),
                 onClick = {

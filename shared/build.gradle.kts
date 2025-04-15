@@ -30,6 +30,7 @@ kotlin {
     sourceSets {
         androidMain.dependencies {
             implementation(libs.material)
+            implementation(libs.compose.material3)
             implementation(libs.androidx.fragment.ktx)
             implementation(libs.kotlinx.coroutines.guava)
 
