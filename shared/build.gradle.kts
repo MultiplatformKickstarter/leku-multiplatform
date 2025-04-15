@@ -29,9 +29,9 @@ kotlin {
 
     sourceSets {
         androidMain.dependencies {
-            implementation("com.google.android.material:material:1.12.0")
-            implementation("androidx.fragment:fragment-ktx:1.8.4")
-            implementation("org.jetbrains.kotlinx:kotlinx-coroutines-guava:1.9.0")
+            implementation(libs.material)
+            implementation(libs.androidx.fragment.ktx)
+            implementation(libs.kotlinx.coroutines.guava)
 
             val playServicesVersion = "19.0.0"
             implementation("com.google.android.gms:play-services-maps:$playServicesVersion") {
@@ -45,8 +45,7 @@ kotlin {
                 exclude(group = "com.android.support")
             }
 
-            implementation("com.google.maps:google-maps-services:0.2.9")
-
+            implementation(libs.google.maps.services)
         }
         commonMain.dependencies {
             //put your multiplatform dependencies here
