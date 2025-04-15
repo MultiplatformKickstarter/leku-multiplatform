@@ -28,6 +28,26 @@ kotlin {
     }
 
     sourceSets {
+        androidMain.dependencies {
+            implementation("com.google.android.material:material:1.12.0")
+            implementation("androidx.fragment:fragment-ktx:1.8.4")
+            implementation("org.jetbrains.kotlinx:kotlinx-coroutines-guava:1.9.0")
+
+            val playServicesVersion = "19.0.0"
+            implementation("com.google.android.gms:play-services-maps:$playServicesVersion") {
+                exclude(group = "com.android.support")
+            }
+            implementation("com.google.android.gms:play-services-location:21.3.0") {
+                exclude(group = "com.android.support")
+            }
+
+            implementation("com.google.android.libraries.places:places:4.0.0") {
+                exclude(group = "com.android.support")
+            }
+
+            implementation("com.google.maps:google-maps-services:0.2.9")
+
+        }
         commonMain.dependencies {
             //put your multiplatform dependencies here
         }
