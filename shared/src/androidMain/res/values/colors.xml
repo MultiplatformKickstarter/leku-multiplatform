@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="leku_white">#FFFFFF</color>
+  <color name="leku_white_alpha">#F2FFFFFF</color>
+  <color name="leku_soft_grey">#ECEEEF</color>
+  <color name="leku_mid_grey">#85969f</color>
+  <color name="leku_strong_grey">#50545A</color>
+  <color name="leku_search_background">#0000</color>
+  <color name="leku_blackish">#171d20</color>
+  <color name="leku_black_20_transparent">#33000000</color>
+
+  <color name="leku_ic_close">@null</color>
+  <color name="leku_ic_gps">@null</color>
+  <color name="leku_ic_satellite">@null</color>
+  <color name="leku_ic_maps">@null</color>
+  <color name="leku_location_accept_button_bg">@null</color>
+
+</resources>

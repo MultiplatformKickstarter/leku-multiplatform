@@ -19,7 +19,6 @@ captures/
 output.json
 
 # IntelliJ
-*.iml
 .idea/
 misc.xml
 deploymentTargetDropDown.xml
@@ -39,3 +38,39 @@ xcuserdata
 *.klib
 .kotlin/metadata
 .kotlin/sessions
+
+build/
+/*/bin/
+/*/gen/
+/*/proguard/
+/*/out/
+/*/.svn/
+/*/.settings/
+*.ap_
+*.dex
+project.properties
+androidApp/src/debug/
+androidApp/src/debug/*.xml
+
+.idea/.name
+.idea/*.xml
+.idea/dataSources.ids
+.idea/scopes/
+.idea/inspectionProfiles/
+.idea/*/
+.metadata/
+
+Thumbs.db
+
+atlassian-ide-plugin.xml
+
+/*/mapping.txt
+/*/seeds.txt
+/*/unused.txt
+
+
+.gradle/*
+
+projectFilesBackup/.idea/*.xml
+
+site/
